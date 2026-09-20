@@ -1,0 +1,163 @@
+{
+    "key": "group_stashevsky_theme_settings",
+    "title": "Theme General Settings",
+    "fields": [
+        {
+            "key": "field_header_subtitle",
+            "label": "Header Subtitle",
+            "name": "header_subtitle",
+            "type": "text",
+            "default_value": "dubai | united arab emirates"
+        },
+        {
+            "key": "field_contacts_title",
+            "label": "Contacts Title",
+            "name": "contacts_title",
+            "type": "text",
+            "default_value": "Contacts"
+        },
+        {
+            "key": "field_contacts_description",
+            "label": "Contacts Description",
+            "name": "contacts_description",
+            "type": "textarea",
+            "default_value": "Contact us to learn more about exhibitions, artists, artwork selection, building a private collection, and collaboration opportunities."
+        },
+        {
+            "key": "field_contact_address",
+            "label": "Address",
+            "name": "contact_address",
+            "type": "text",
+            "default_value": "123 Art Street, Culture City"
+        },
+        {
+            "key": "field_contact_hours",
+            "label": "Working Hours",
+            "name": "contact_hours",
+            "type": "wysiwyg",
+            "default_value": "TUE-SUN 11am - 10pm<br>MON closed"
+        },
+        {
+            "key": "field_contact_email",
+            "label": "Email",
+            "name": "contact_email",
+            "type": "text",
+            "default_value": "office@demetragallery.com"
+        },
+        {
+            "key": "field_contact_phones",
+            "label": "Phone Numbers",
+            "name": "contact_phones",
+            "type": "repeater",
+            "button_label": "Add Phone",
+            "sub_fields": [
+                {
+                    "key": "field_phone_number",
+                    "label": "Phone Number",
+                    "name": "phone_number",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "key": "field_social_links",
+            "label": "Social Links",
+            "name": "social_links",
+            "type": "repeater",
+            "button_label": "Add Social Link",
+            "sub_fields": [
+                {
+                    "key": "field_social_name",
+                    "label": "Name",
+                    "name": "name",
+                    "type": "text",
+                    "instructions": "e.g. WhatsApp"
+                },
+                {
+                    "key": "field_social_icon",
+                    "label": "Icon",
+                    "name": "icon",
+                    "type": "image",
+                    "return_format": "array",
+                    "instructions": "Upload the SVG or PNG icon"
+                },
+                {
+                    "key": "field_social_url",
+                    "label": "URL",
+                    "name": "url",
+                    "type": "url"
+                }
+            ]
+        },
+        {
+            "key": "field_map_iframe",
+            "label": "Map Iframe HTML",
+            "name": "map_iframe",
+            "type": "textarea",
+            "instructions": "Paste Google Maps 'Embed a map' <iframe> snippet here"
+        },
+        {
+            "key": "field_modal_title",
+            "label": "Modal Title",
+            "name": "modal_title",
+            "type": "text",
+            "default_value": "Upcoming Events"
+        },
+        {
+            "key": "field_modal_subtitle",
+            "label": "Modal Subtitle",
+            "name": "modal_subtitle",
+            "type": "text",
+            "default_value": "become part of a cultural community"
+        },
+        {
+            "key": "field_events",
+            "label": "Events",
+            "name": "events",
+            "type": "repeater",
+            "sub_fields": [
+                {
+                    "key": "field_event_date",
+                    "label": "Date",
+                    "name": "date",
+                    "type": "text"
+                },
+                {
+                    "key": "field_event_name",
+                    "label": "Name",
+                    "name": "name",
+                    "type": "text"
+                },
+                {
+                    "key": "field_event_description",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "textarea"
+                },
+                {
+                    "key": "field_event_spots",
+                    "label": "Spots Text",
+                    "name": "spots_text",
+                    "type": "text"
+                }
+            ],
+            "button_label": "Add Event"
+        },
+        {
+            "key": "field_modal_image",
+            "label": "Modal Image",
+            "name": "modal_image",
+            "type": "image",
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-settings"
+            }
+        ]
+    ]
+}

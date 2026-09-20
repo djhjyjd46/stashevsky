@@ -1,0 +1,98 @@
+{
+    "key": "group_stashevsky_home_page",
+    "title": "Home Page Content",
+    "fields": [
+        {
+            "key": "field_sections",
+            "label": "Page Sections",
+            "name": "sections",
+            "type": "repeater",
+            "sub_fields": [
+                {
+                    "key": "field_section_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text"
+                },
+                {
+                    "key": "field_section_subtitle",
+                    "label": "Subtitle",
+                    "name": "subtitle",
+                    "type": "text"
+                },
+                {
+                    "key": "field_section_description",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "wysiwyg"
+                },
+                {
+                    "key": "field_section_image",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_section_images",
+                    "label": "Slider Images",
+                    "name": "images",
+                    "type": "repeater",
+                    "sub_fields": [
+                        {
+                            "key": "field_section_slide_image",
+                            "label": "Slide Image",
+                            "name": "image",
+                            "type": "image",
+                            "return_format": "array"
+                        }
+                    ],
+                    "button_label": "Add Slide"
+                },
+                {
+                    "key": "field_section_orientation",
+                    "label": "Image Orientation",
+                    "name": "image_orientation",
+                    "type": "select",
+                    "choices": {
+                        "left": "Left",
+                        "right": "Right"
+                    },
+                    "default_value": "left"
+                },
+                {
+                    "key": "field_section_has_button",
+                    "label": "Has Button?",
+                    "name": "has_button",
+                    "type": "true_false",
+                    "default_value": 0
+                },
+                {
+                    "key": "field_section_button_text",
+                    "label": "Button Text",
+                    "name": "button_text",
+                    "type": "text",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_section_has_button",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "button_label": "Add Section"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ]
+    ]
+}

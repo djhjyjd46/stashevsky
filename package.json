@@ -1,0 +1,22 @@
+{
+  "name": "stashevsky-theme",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Stashevsky WordPress theme with Vite and Tailwind integration.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.4",
+    "vite": "^5.4.1"
+  },
+  "dependencies": {
+    "gsap": "^3.12.2",
+    "swiper": "^12.1.3"
+  }
+}
